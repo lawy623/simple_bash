@@ -1,16 +1,8 @@
-# Operation System Homework 1.
+# Simple Bash in C.
 Author: Yue Luo
-
-UserName: lawy623
-
-UID: yl4003
-
-Email: yl4003@columbia.edu
 
 ## Programming part:
 The source code is in '`shell.c`' with a header file named '`shell.h`'. Please download the repo, and run '`make w4118_sh`'' to make the targeted executable. You can run '`make clean`'' to clean it up.
-
-Main references of this homework are listed in '`reference.txt`'.
 
 ### Design Logic:
 - First the shell prints prompt and it is waiting for the stdin and it will receive it as a line. Then, it will go to replace all the found valid !! and !str in this input. If the !'s are not valid(i.e. can not find in past logs, or just a single !), the shell will not save this invalid command in log and will not execute it.
