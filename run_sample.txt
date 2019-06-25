@@ -1,0 +1,100 @@
+w4118@w4118:~/Downloads/f18-hmwk1-lawy623-master$ ./w4118_sh 
+$
+$ls   
+Makefile  README.md  reference.txt  shell.c  shell.h  w4118_sh	written.txt
+$/bin/ls
+Makefile  README.md  reference.txt  shell.c  shell.h  w4118_sh	written.txt
+$
+$cd ..  
+$cd ./f18-hmwk1-lawy623-master
+$history
+0 ls
+1 /bin/ls
+2 cd ..
+3 cd ./f18-hmwk1-lawy623-master
+4 history
+$!his
+0 ls
+1 /bin/ls
+2 cd ..
+3 cd ./f18-hmwk1-lawy623-master
+4 history
+5 history
+$!h
+0 ls
+1 /bin/ls
+2 cd ..
+3 cd ./f18-hmwk1-lawy623-master
+4 history
+5 history
+6 history
+$
+$!/
+Makefile  README.md  reference.txt  shell.c  shell.h  w4118_sh	written.txt
+$history -c
+$history ass
+error: invalid argument
+$
+$history
+9 history ass
+10 history
+$history 2
+10 history
+11 history 2
+$
+$ls | grep i
+Makefile
+written.txt
+$ls -l | grep i  
+-rw-rw-r-- 1 w4118 w4118    96 Sep 18 17:19 Makefile
+-rw-rw-r-- 1 w4118 w4118  2596 Sep 18 17:19 written.txt
+$!l | wc -c
+109
+$
+$history
+9 history ass
+10 history
+11 history 2
+12 ls | grep i
+13 ls -l | grep i
+14 ls -l | grep i | wc -c
+15 history
+$cat shell.c | grep int | wc -c
+2537
+$echo !!
+0
+$history
+9 history ass
+10 history
+11 history 2
+12 ls | grep i
+13 ls -l | grep i
+14 ls -l | grep i | wc -c
+15 history
+16 cat shell.c | grep int | wc -c
+17 echo cat shell.c | grep int | wc -c
+18 history
+$
+$echo !his
+history
+$
+$   |  cat
+error: Invalid pipes.
+$ ls |  | cat
+error: Invalid pipes.
+$ls | cat |   
+error: Invalid pipes.
+$
+$history -c
+$!!
+error: Argument not found.
+$history
+24 history
+$!a
+error: Argument not found.
+$
+$
+$ls | !a
+error: Argument not found.
+$exit
+
